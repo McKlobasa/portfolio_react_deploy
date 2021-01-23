@@ -9,6 +9,7 @@ import { ReactComponent as Header3 } from './images/Header3.svg'
 import { ReactComponent as Header4 } from './images/Header4.svg'
 
 const StyledHeader = styled.div`
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   margin: auto;

@@ -5,17 +5,16 @@ import MontserratBold from './fonts/Montserrat-Bold.ttf'
 
 
 const Container = styled.div`
+  box-sizing: border-box;
   padding: 50px;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   font-family: 'MontserratBold', sans-serif;
-  display: flex;
-  justify-content: center;
 `
-const ContactLine = styled.span`
-  flex: 1;
+const ContactLine = styled.div`
+  box-sizing: border-box;
   color: var(--secondary);
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   padding: 30px;
 `

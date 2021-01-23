@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ScrollProvider from './contexts/ScrollProvider.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ScrollProvider>
+      <App />
+    </ScrollProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

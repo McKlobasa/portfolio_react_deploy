@@ -26,10 +26,10 @@ const Button = styled.button`
 export default function Flags (props) {
   return (
     <Container>
-      <Button>
+      <Button onClick={() => props.setLang('SLO')}>
         <Flag src={"https://hatscripts.github.io/circle-flags/flags/si.svg"} animationDuration={1.0}/>
       </Button>
-      <Button>
+      <Button onClick={() => props.setLang('ENG')}>
 	<Flag src={"https://hatscripts.github.io/circle-flags/flags/gb.svg"} animationDuration={1.5}/>
       </Button>
     </Container>

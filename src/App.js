@@ -64,21 +64,74 @@ const MiddleBackground = styled.div`
 const StyledImage = styled.div`
   margin: auto;
 `
-const StyledMasterTitle = styled.div`
-  margin: auto;
-  animation-name: ${comeInAnimation};
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  height: 75vw;
-  max-height: 600px;
-`
 const Higlight = styled.span`
   color: var(--secondary);
 `
 const Spacer = styled.div`
   height: 50vh;
 `
-
+const wing1Anim = keyframes`
+  0% {
+      d: path("M280.603 126L309 181.187L297.043 219L259.679 197.538H171L280.603 126Z");
+  }
+  90% {
+      d: path("M280.603 109L309 181.187L297.043 219L289.679 177.538H221L280.603 109Z");
+  }
+  100% {
+      d: path("M280.603 126L309 181.187L297.043 219L259.679 197.538H171L280.603 126Z");
+  }
+`;
+const wing2Anim = keyframes`
+  0% {
+      d: path("M407.159 130L437 238L399.201 206.114L366.873 200.457L343 174.229L407.159 130Z");
+  }
+  90% {
+      d: path("M387.159 130L537 118L379.201 206.114L366.873 200.457L343 174.229L387.159 130Z");
+  }
+  100% {
+      d: path("M407.159 130L437 238L399.201 206.114L366.873 200.457L343 174.229L407.159 130Z");
+  }
+`;
+const watermelonFly = keyframes`
+  0% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-8deg);
+  }
+`;
+const AnimatedMasterTitle = styled(MasterTitle)`
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-top: 40px; 
+  padding-bottom: 40px; 
+  display: block; 
+  height: auto; 
+  width: 80vw; 
+  max-width: 800px;
+  .slikca {
+    animation: ${watermelonFly} infinite 2.5s ease-out; 
+  }
+  .wing1 {
+    animation: ${wing1Anim} infinite 2.5s ease-out; 
+  }
+  .wing2 {
+    animation: ${wing2Anim} infinite 2.5s ease-out; 
+  }
+`
+const StyledMasterTitle = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: ${comeInAnimation};
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  height: 45vw;
+  max-height: 600px;
+  width: 100vw
+`
 function App(props) {
   const [lang, setLang] = useState('SLO')
   return (
@@ -88,7 +141,7 @@ function App(props) {
       <Spacer />
       <ScrollSign />
       <StyledMasterTitle>
-        <MasterTitle  style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', paddingBottom: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
+        <AnimatedMasterTitle />
       </StyledMasterTitle>
       <Flags setLang={setLang}/>
       <MiddleBackground>

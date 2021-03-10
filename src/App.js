@@ -8,6 +8,7 @@ import story from './story.js'
 import Flags from './Flags.js'
 import ScrollSign from './ScrollSign.js'
 import Contact from './Contact.js'
+import Tldr from './Tldr.js'
 import { Chapter01, Chapter02, Chapter03,
          Chapter04, Chapter05, Chapter06,
          Chapter07, Chapter08, Chapter09,
@@ -151,11 +152,10 @@ function App(props) {
           <Image0  style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/> 
           }
         </StyledImage>
+        <Tldr />
         <ChapterTitle>
           {story.SLO.titles[1]}
         </ChapterTitle>
-
-
         <ChapterContent>
           <Chapter01 lang={lang}/>
         <StyledImage>

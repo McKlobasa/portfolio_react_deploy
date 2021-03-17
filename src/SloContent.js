@@ -122,7 +122,14 @@ const Chapter11 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>Now I want to move forward.<br/><br/>
+
+And I cannot do it alone. I need to be surrounded by other creators, other people who breathe life in concepts, people from whom I can gain experience, best practices, skills and knowledge. I managed to do that for a while by reading books and articles on hacker news. Now, however, I feel as if my progress has dangerously slowed down and I am not the kind of person to stand idly by.
+<br/><br/>
+I can offer a great amount of enthusiasm, a better part of my life and my limited edition(prečrtano)set of skills.
+<br/><br/>
+What do you say? Would you be part of my next chapter?
+</>
     )
   }
 }

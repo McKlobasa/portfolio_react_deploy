@@ -49,7 +49,7 @@ const Chapter04 = (props) => {
 const Chapter05 = (props) => {
   if (props.lang === 'SLO') {
     return (
-      <>Zdi se, da so me v življenju naključni nepovezani trenutki usmerjali na pot programiranja.<br/><br/>Tako je v četrtem letniku, je prfesor vprašal, če bi se kdo prijavil na tekmovanje v programirjanju mikrokrmilnikov. Pogledal sem levo, vsi so povešali pogled. Pogledal sem še desno in nazaj. Isto. Pogledal sem kolega na levi, in je nesigurno skomignil. Pa sva se javila.<br/><br/> Z neverjetnimi izkušnjami ene dvajsetih vrstic v c-ju in in brez plana. Pa je šlo. Poprosil sem prijatelja z računalniške smeri, če bi mi razkril svet te čudežne obrti. Tako se je tisto popoldne za mizo v guinnessu moje življenje spremenilo. Pokazal mi je osnove c-ja, in že sem prižigal lučke, bral senzorje in knofke, pisal driverje za zaslončke in premikal tuljavice.<br/><br/> </>
+      <>Zdi se, da so me v življenju naključni nepovezani trenutki usmerjali na pot programiranja.<br/><br/>Tako je v četrtem letniku profesor vprašal, če bi se kdo prijavil na tekmovanje iz programirjanja mikrokrmilnikov. Pogledal sem levo, vsi so povešali pogled. Pogledal sem še desno in nazaj. Enako. Pogledal sem kolega na levi, in je nesigurno skomignil. Pa sva se javila.<br/><br/> Z neverjetnimi izkušnjami ene dvajsetih vrstic v c-ju in in brez načrta. Pa je šlo. Poprosil sem prijatelja z računalniške smeri, če bi mi razkril svet te čudežne obrti. Tako se je tisto popoldne za mizo v Guinnessu moje življenje za vedno spremenilo. Pokazal mi je osnove c-ja in že sem prižigal lučke, bral senzorje in knofke, pisal driverje za zaslončke in premikal tuljavice.<br/><br/> </>
     )
   } else {
     return (
@@ -61,7 +61,7 @@ const Chapter06 = (props) => {
   if (props.lang === 'SLO') {
     return (
       <><br/><br/>
-      S sošocem sva si naredila svojo plošcico s krmilnikom, si napisala knjižnjice, prešpricala vse možne ure sociologije in se odpravila na tekmovanje. Bila sva druga. Ali pa tretja. Ne vem, in ne da se mi iskati plakete. Vsekakor pa nama je precej uspelo.<br/><br/>Začutil sem, da ja. Programiranje je to.</>
+      S sošocem sva si naredila svojo plošcico s krmilnikom, si napisala knjižnjice, prešpricala vse možne ure sociologije in se odpravila na tekmovanje. Bila sva druga. Ali pa tretja. Ne vem, plaketo sem pa že zdavnaj založil. Vsekakor pa nama je uspelo.<br/><br/>Tako sem prvič začutil moč premikanja bitkov.</>
     )
   } else {
     return (
@@ -72,7 +72,7 @@ const Chapter06 = (props) => {
 const Chapter07 = (props) => {
   if (props.lang === 'SLO') {
     return (
-      <>Vseeno sem se vpisal na Eletrotehniško fakulteto. Ne vem zakaj. Verjetno se mi je zdela edina logična poteza. Edini predmet, ki sem ga kdajkoli dobil 10 je bil programiranje 1, kjer smo imeli osnove web developmenta... to se mi zdi, da pove nekaj. \n\n Po prvem letniku, po praksi v kolektorju, mi je mentor predlagal, da naj pošljem prošnjo v Kolektor Idrium. To je bila precej kul skupina študentov, kjer smo izdelovali naprave, za notranjo uporabo. Večinoma so bili to zaganjalniki motorjev, merilne naprave, krmilniki za to in ono. Ampak kmalu sem se začel dolgočasiti. Rabil sem nekaj več. Svoje naprave sem rabil bolj ... žive.</>
+      <>Vseeno sem se vpisal na Eletrotehniško fakulteto. Ne vem zakaj. Verjetno se mi je zdela edina logična poteza. Edini predmet, ki sem ga kdajkoli dobil 10 je bil programiranje 1, kjer smo imeli osnove web developmenta ... to se mi zdi, da pove nekaj. <br/><br/> Po prvem letniku, po praksi v Kolektorju, mi je mentor predlagal, da naj pošljem prošnjo v Kolektor Idrium. To je bila precej kul skupina študentov, kjer smo izdelovali naprave, za notranjo uporabo. Večinoma so bili to zaganjalniki motorjev, merilne naprave, krmilniki za to in ono. Ampak kmalu sem se začel dolgočasiti. Rabil sem nekaj več. Svoje naprave sem rabil bolj ... žive.</>
     )
   } else {
     return (

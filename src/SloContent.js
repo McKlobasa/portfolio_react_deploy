@@ -8,7 +8,10 @@ const Chapter01 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>
+I was just a young chap when one snowy winter day my eye caught something particularly exciting in a nearby store. It was a LEGO set of yellow programmable robots.
+
+      </>
     )
   }
 }
@@ -19,7 +22,12 @@ const Chapter02 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>
+
+All my processing power was immediately redirected to images of me building my own robot, designing a flying car, and traveling to outer space to save our lovely planet from blue extraterrestrials. The possibilities were endless.
+<br/><br/>
+Saint Nicholas day was right around the corner and the only thing I asked for was that LEGO set. Aha! Checkmate St. Nicholas ♞. And so it began.
+      </>
     )
   }
 }
@@ -30,7 +38,14 @@ const Chapter03 = (props) => {
   )
   } else {
     return (
-      <>lorem ipsum</>
+      <>The next few years were packed with insectoid LEGO robots, electronic starter kits, and countless disassembled and barely reassembled radios, TVs and other home appliances my parents badly wanted in tip-top shape. Then one day, by divine intervention, a song popped up on my mp4 playlist. It was the U2s song - Beautiful Day.
+<br/><br/>
+
+I got shivers down my spine. Yes. That’s it. This is the kind of music that moves mountains. From that moment on I was a rocker. (Oh yes, that song felt like hard rock to my backstreet boys ears). I grabbed my mothers guitar and spent every moment I could spare making some unearsworthy sounds. My fingers were getting faster, my brain got bigger and my budget close to nonexistent.
+<br/><br/>
+
+Every time I want something I try to make it myself. But how does one make amplifiers? Effects? Guitars? I didn’t know where to begin. What could I do? Oh yeah, no biggie. I enrolled in Vegova - Upper Secondary School of Electrical and Computer Engineering.
+</>
     )
   }
 }
@@ -42,18 +57,25 @@ const Chapter04 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>We didn’t have lectures on how to make guitar amps or pedals. We had lectures on basic concepts of electronics. We learned to read datasheets and solder and just enough to get me started. So I learned how to make my gear on my own. I made 100w amps, amps in paint cans, candy boxes, amps made from old rigged radios, micro amps. Just really a lot of amps. Oh and also synthesizers, binary watches, light shows … but. But what about robots? Processors? Spaceships? No, these were still out of my reach.</>
     )
   }
 }
 const Chapter05 = (props) => {
   if (props.lang === 'SLO') {
     return (
-      <>Zdi se, da so me v življenju naključni nepovezani trenutki usmerjali na pot programiranja.<br/><br/>Tako je v četrtem letniku profesor vprašal, če bi se kdo prijavil na tekmovanje iz programirjanja mikrokrmilnikov. Pogledal sem levo, vsi so povešali pogled. Pogledal sem še desno in nazaj. Enako. Pogledal sem kolega na levi, in je nesigurno skomignil. Pa sva se javila.<br/><br/> Z neverjetnimi izkušnjami ene dvajsetih vrstic v c-ju in in brez načrta. Pa je šlo. Poprosil sem prijatelja z računalniške smeri, če bi mi razkril svet te čudežne obrti. Tako se je tisto popoldne za mizo v Guinnessu moje življenje za vedno spremenilo. Pokazal mi je osnove c-ja in že sem prižigal lučke, bral senzorje in knofke, pisal driverje za zaslončke in premikal tuljavice.<br/><br/> </>
+      <>Zdi se, da so me v življenju naključni nepovezani trenutki usmerjali na pot programiranja.<br/><br/>Tako je v četrtem letniku profesor vprašal, če bi se kdo prijavil na tekmovanje iz programirjanja mikrokrmilnikov. Pogledal sem levo, vsi so povešali pogled. Pogledal sem še desno in nazaj. Enako. Pogledal sem kolega na levi, in je negotovo skomignil. Pa sva se javila.<br/><br/> Z neverjetnimi izkušnjami ene dvajsetih vrstic v c-ju in brez načrta. Pa je šlo. Poprosil sem prijatelja z računalniške smeri, če bi mi razkril svet te čudežne obrti. Tako se je tisto popoldne za mizo v Guinnessu moje življenje za vedno spremenilo. Pokazal mi je osnove c-ja in že sem prižigal lučke, bral senzorje in knofke, pisal driverje za zaslončke in premikal tuljavice.<br/><br/> </>
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>It seems that throughout my life, a series of random, unrelated events have led me to programming. 
+
+<br/><br/>
+In my last year in high school a professor asked who would like to attend a competition in programmable electronics. I looked to my left, everyone averted their gaze. I looked to my right and behind me. I saw the same. I looked at my classmate who shrugged uncertainly. So we volunteered.
+
+<br/><br/>
+With phenomenal experience of some twenty lines in C and no plan, but we made it work. I turned to a friend from the computer department and asked if he would reveal to me the miraculous world of this craft. My life had forever changed that afternoon in a Guinness booth. He explained the basics of C, and all of a sudden I was blinking LEDs, writing display drivers and making stuff groove move.
+</>
     )
   }
 }
@@ -65,7 +87,10 @@ const Chapter06 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>My classmate and I made our own development board, wrote libraries, skipped all sociology lectures and got ready for the competition. We came in second! Or third. I’m not sure and I seem to have misplaced the award. In any case we succeeded. 
+
+I could feel it, programming is the way to go.
+</>
     )
   }
 }
@@ -76,7 +101,9 @@ const Chapter07 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>I still enrolled in the Faculty of Electrical Engineering. I can’t say why. Maybe I thought it was the obvious next step. The only subject I have ever gotten a 10 at was programming 1, where we studied the basics of web development… I think this says something. After the first year at University and an internship at Kolektor, my mentor suggested I send an application to Kolektor Idrium. I joined a pretty cool group of students and we made machines for prototyping.
+However, I soon became bored. I needed something more. I needed for my creations to be more… alive.
+</>
     )
   }
 }
@@ -88,7 +115,14 @@ const Chapter08 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>After what seems like an eternity of waiting for a rad project one finally came. There was a need for an easily programmable machine with a few pneumatic valves and two welding heads. The user needed to enter a sequence following which the valves would be activated.
+
+<br/><br/>
+This was as close as I could get to a robot, so I asked if I could take on this project. I was working on it non stop. Of course I wanted my GUI to look nice, so I did a material-ish design on an industry controller from the early 2000 (hiding all the ugly borders under solid color rectangles was a real chore).
+
+<br/><br/>
+My machine still works every week, making prototypes. Was it a robot? By definition, yes. Was it really freaking cool? Hell yes.
+</>
     )
   }
 }
@@ -99,7 +133,11 @@ const Chapter09 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>It finally dawned on me that if I wanna make exciting stuff, programming is my only option. So a few months later I sent my CV to Kolektor Vision. They were making devices for quality control with computer vision.
+
+<br/><br/>
+There I learned how to process images, how to think about all the edge cases and picked up a bit about tests. I grew to love Linux and vim, and to hate C++ with all its SEGMENTATION FAULT errors. Uni was also getting a lot more interesting with projects like colouring black and white images with neural networks, VR graphs and image segmentations. So I was happy. I was on the right track.
+</>
     )
   }
 }
@@ -110,7 +148,12 @@ const Chapter10 = (props) => {
     )
   } else {
     return (
-      <>lorem ipsum</>
+      <>In search for at least a little bit of financial stability and a beer with my friends here and there I’ve changed my job to be a programmer in a video production house. There they gave me freedom to choose the technologies I’d like to work with.
+
+<br/><br/>
+I already knew I wanted to pursue web technologies and make pretty GUIs for my programs that would effortlessly communicate between themselves and with the outside world. So I wrote my first front-ends in React, my first servers in node, automated countless productions, used and wrote my first APIs, deployed websites and did a whole lotta other stuff.
+Now you can find my little creations in almost every VPK production.
+</>
     )
   }
 }

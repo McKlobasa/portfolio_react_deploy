@@ -28,17 +28,17 @@ const Green = styled.span `
   background: var(--highlight);
   font-weight: bold;
   color: white;
-  padding: 4px;
+  padding: 6px;
   margin: 3px;
-  border-radius: 3px;
+  border-radius: 0px 9px 0px 9px;
 `
 const Orange = styled.span `
   background: #FFAA55;
   font-weight: bold;
   color: white;
-  padding: 4px;
+  padding: 6px;
   margin: 3px;
-  border-radius: 3px;
+  border-radius: 0px 9px 0px 9px;
 `
 const TldrButton = styled.button`
 position: relative;
@@ -69,7 +69,24 @@ position: relative;
   }
 
 `
+const NoShowButton = styled.button`
+  height: 100%;
+  width: 100vw;
+  background: none;
+  border: none;
+  :focus {
+    outline: none;
+  }
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+`
 const Contents = props => <Container>
+<Green>+38670 569 669</Green>
+<Green>kl.lampret@gmail.com</Green>
+<br /><br />  
 <Green>JS</Green>- I use it on most of my projects. I’ve read You Don’t Know JS, so I know a thing or two.
 <br /><br />  
 <Green>NODE</Green>- I’ve written a lot of Express servers and used it extensively for automation of productions at VPK.
@@ -101,7 +118,9 @@ const Tldr = props => {
   const [contentsShown, setContentsShown] = useState(false)
   return (
     <StyledTldr>
-      <TldrButton active={contentsShown} onClick={() => setContentsShown(!contentsShown)}>{contentsShown ? 'hide specs' : 'show specs'}</TldrButton>
+      <TldrButton active={contentsShown} onClick={() => setContentsShown(!contentsShown)}>{contentsShown ? 'hide specs' : 'show specs'}
+        <NoShowButton onClick={() => setContentsShown(!contentsShown)}></NoShowButton>
+      </TldrButton>
       { contentsShown ? <Contents /> : '' }
     </ StyledTldr>
   )

@@ -154,7 +154,10 @@ function App(props) {
         </StyledImage>
         <Tldr />
         <ChapterTitle>
-          {story.SLO.titles[1]}
+          {lang == 'SLO'
+            ? story.SLO.titles[1]
+            : story.SLO.titlesENG[1]
+          }
         </ChapterTitle>
         <ChapterContent>
           <Chapter01 lang={lang}/>
@@ -164,7 +167,10 @@ function App(props) {
           <Chapter02 lang={lang}/>
         </ChapterContent>
         <ChapterTitle>
-          {story.SLO.titles[2]}
+          {lang == 'SLO'
+            ? story.SLO.titles[2]
+            : story.SLO.titlesENG[2]
+          }
         </ChapterTitle>
         <Image3  style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', height: 'auto', width: '300px'}}/>
         <ChapterContent>
@@ -173,7 +179,10 @@ function App(props) {
           <Chapter04 lang={lang}/>
         </ChapterContent>
         <ChapterTitle>
-          {story.SLO.titles[3]}
+          {lang == 'SLO'
+            ? story.SLO.titles[3]
+            : story.SLO.titlesENG[3]
+          }
         </ChapterTitle>
         <ChapterContent>
           <Chapter05 lang={lang}/>
@@ -181,34 +190,49 @@ function App(props) {
               <Chapter06 lang={lang}/>
         </ChapterContent>
         <ChapterTitle>
-          {story.SLO.titles[4]}
+          {lang == 'SLO'
+            ? story.SLO.titles[4]
+            : story.SLO.titlesENG[4]
+          }
         </ChapterTitle>
         <ChapterContent>
           <Chapter07 lang={lang}/>
         </ChapterContent>
         <ChapterTitle>
-          {story.SLO.titles[5]}
+          {lang == 'SLO'
+            ? story.SLO.titles[5]
+            : story.SLO.titlesENG[5]
+          }
         </ChapterTitle>
         <Image6 style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', height: 'auto', width: '300px'}}/>
         <ChapterContent>
           <Chapter08 lang={lang}/>
         </ChapterContent>
         <ChapterTitle>
-          {story.SLO.titles[6]}
+          {lang == 'SLO'
+            ? story.SLO.titles[6]
+            : story.SLO.titlesENG[6]
+          }
         </ChapterTitle>
         <Image7 style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', height: 'auto', width: '300px'}}/>
         <ChapterContent>
           <Chapter09 lang={lang}/>
         </ChapterContent>
         <ChapterTitle>
-          {story.SLO.titles[7]}
+          {lang == 'SLO'
+            ? story.SLO.titles[7]
+            : story.SLO.titlesENG[7]
+          }
         </ChapterTitle>
         <ChapterContent>
           <Chapter10 lang={lang}/>
         </ChapterContent>
         <Image8 style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', height: 'auto', width: '300px'}}/>
         <ChapterTitle>
-          {story.SLO.titles[8]}
+          {lang == 'SLO'
+            ? story.SLO.titles[8]
+            : story.SLO.titlesENG[8]
+          }
         </ChapterTitle>
         <ChapterContent>
           <Chapter11 lang={lang}/>

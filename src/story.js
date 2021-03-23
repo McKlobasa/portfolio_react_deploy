@@ -31,6 +31,17 @@ const story = {
       'poglavje VI - Franken ekspert',
       'poglavje VII - S trebuhom za kruhom',
       'poglavje VIII - Tu prideš na vrsto ti, bralec'
+    ],
+    titlesENG: [
+      'KLEMEN the origin',
+      'Chapter I -  Amped Up',
+      'Chapter II - Rockstar, Vegova Style',
+      'Chapter III - A Step in the Right Direction',
+      'Chapter IV - Return of the Ampere',
+      'Chapter V - I did it. It’s alive! Muahahah',
+      'Chapter VI - Franken Expert',
+      'Chapter VII - To Pay the Beers',
+      'Chapter VII - It’s Your Turn, Darth Reader'
     ]
   }
 }

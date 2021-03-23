@@ -18,6 +18,7 @@ const Container = styled.div`
   height: fit-content;
   padding: 30px;
   color: white;
+  line-height: 1.7;
 `
 const buttonAnimation = keyframes`
  0% { width: 30vw; }

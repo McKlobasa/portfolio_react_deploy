@@ -28,6 +28,7 @@ import { ReactComponent as Image6 } from './images/klemen_6.svg'
 import { ReactComponent as Image7 } from './images/klemen_7.svg'
 import { ReactComponent as Image8 } from './images/klemen_8.svg'
 import { ReactComponent as MasterTitle } from './images/MasterTitle.svg'
+import LeetText from './LeetText'
 
 
 const GlobalStyle = createGlobalStyle`
@@ -152,6 +153,7 @@ function App(props) {
           <Image0  style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/> 
           }
         </StyledImage>
+        <LeetText />
         <Tldr />
         <ChapterTitle>
           {lang == 'SLO'

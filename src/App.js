@@ -59,6 +59,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
     height: fit-content;
     font-family:  'sans-serif';
+    overflow-x: hidden;
   }
 `
 const comeInAnimation = keyframes`

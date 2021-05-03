@@ -68,9 +68,16 @@ const comeInAnimation = keyframes`
  100% { transform: Scale(100%) }
 `
 const MiddleBackground = styled.div`
+  position: relative;
+  box-sizing: border-box;
   height: 100%;
   margin: auto;
   background: white;
+  border-left: calc(50vw - 500px) solid white;
+  border-right: calc(50vw - 500px) solid white;
+  @media (max-width: 1000px) {
+    border: none;
+  }
 `
 const StyledImage = styled.div`
   margin: auto;

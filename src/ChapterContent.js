@@ -42,8 +42,9 @@ const ChapterLeft = styled.p`
   }
 `
 const Text = styled.p`
- max-width: 900px;
+  max-width: 900px;
   margin: auto;
+  background: white;
 `
 
 

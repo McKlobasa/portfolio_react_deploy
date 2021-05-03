@@ -231,6 +231,7 @@ function App(props) {
           <Image4  style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', height: 'auto', width: '300px'}}/>
           <Chapter04 lang={lang}/>
         </ChapterContent>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <ChapterTitle>
           {lang == 'SLO'
             ? story.SLO.titles[3]
@@ -251,6 +252,7 @@ function App(props) {
         <ChapterContent>
           <Chapter07 lang={lang}/>
         </ChapterContent>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <ChapterTitle>
           {lang == 'SLO'
             ? story.SLO.titles[5]
@@ -261,6 +263,7 @@ function App(props) {
         <ChapterContent>
           <Chapter08 lang={lang}/>
         </ChapterContent>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <ChapterTitle>
           {lang == 'SLO'
             ? story.SLO.titles[6]
@@ -271,6 +274,7 @@ function App(props) {
         <ChapterContent>
           <Chapter09 lang={lang}/>
         </ChapterContent>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <ChapterTitle>
           {lang == 'SLO'
             ? story.SLO.titles[7]
@@ -281,6 +285,7 @@ function App(props) {
           <Chapter10 lang={lang}/>
         </ChapterContent>
         <Image8 style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', height: 'auto', width: '300px'}}/>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <ChapterTitle>
           {lang == 'SLO'
             ? story.SLO.titles[8]
@@ -290,6 +295,7 @@ function App(props) {
         <ChapterContent>
           <Chapter11 lang={lang}/>
         </ChapterContent>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <Contact />
       </MiddleBackground>
     </div>

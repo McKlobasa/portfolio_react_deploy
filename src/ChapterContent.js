@@ -10,7 +10,6 @@ const ChapterRight = styled.p`
   font-size: 2.5vh;
   text-align: left;
   line-height: 1.4;
-  background: linear-gradient(180deg, white 0%, #f6f6f6  100%);
   &::first-letter {
     font-size: 29px;
     font-weight: bold;
@@ -31,7 +30,6 @@ const ChapterLeft = styled.p`
   font-size: 2.5vh;
   text-align: left;
   line-height: 1.4;
-  background: linear-gradient(180deg, white 0%, #f6f6f6  100%);
   &::first-letter {
     font-size: 29px;
     font-weight: bold;

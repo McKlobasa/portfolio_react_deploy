@@ -6,7 +6,10 @@ const StyledTldr = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 0px;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: fit-content;
   min-height: 100px;
 `
@@ -42,11 +45,12 @@ const Orange = styled.span `
   border-radius: 0px 9px 0px 9px;
 `
 const TldrButton = styled.button`
-position: relative;
+  position: relative;
   margin: 0 auto;
-  height: 50px;
+  height: 80px;
   width: 30vw;
-  font-size: 4vmin;
+  font-size: 6vmin;
+  margin: auto;
   border: none;
   background: ${ props => props.active ? 'var(--highlight)' : 'var(--secondary)' };
   color: white;
@@ -62,8 +66,18 @@ position: relative;
     width:0;
     left:100%;
     top:0;
-    border:25px solid transparent;
-    border-left: 25px solid ${ props => props.active ? 'var(--highlight)' : 'var(--secondary)' };
+    border:40px solid transparent;
+    border-left: 40px solid ${ props => props.active ? 'var(--highlight)' : 'var(--secondary)' };
+  }
+  &:before {
+    content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    right:100%;
+    top:0;
+    border:40px solid transparent;
+    border-right: 40px solid ${ props => props.active ? 'var(--highlight)' : 'var(--secondary)' };
   }
 
   :focus {

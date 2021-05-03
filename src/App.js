@@ -28,6 +28,7 @@ import { ReactComponent as Image6 } from './images/klemen_6.svg'
 import { ReactComponent as Image7 } from './images/klemen_7.svg'
 import { ReactComponent as Image8 } from './images/klemen_8.svg'
 import { ReactComponent as MasterTitle } from './images/MasterTitle.svg'
+import { ReactComponent as SpacerMelon } from './images/spacer.svg'
 import LeetText from './LeetText'
 
 
@@ -217,6 +218,7 @@ function App(props) {
         </StyledImage>
           <Chapter02 lang={lang}/>
         </ChapterContent>
+        <SpacerMelon style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/>
         <ChapterTitle>
           {lang == 'SLO'
             ? story.SLO.titles[2]

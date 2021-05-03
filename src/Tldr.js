@@ -100,8 +100,10 @@ const NoShowButton = styled.button`
   left: 0;
 `
 const Contents = props => <Container>
-<Green>+38670 569 669</Green>
+<Green>+38670-569-669</Green>
+<br /><br />  
 <Green>kl.lampret@gmail.com</Green>
+<br /><br />  
 <br /><br />  
 <Green>JS</Green>- I use it on most of my projects. I’ve read You Don’t Know JS, so I know a thing or two.
 <br /><br />  

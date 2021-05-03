@@ -161,8 +161,8 @@ const AnimatedMasterTitle = styled(MasterTitle)`
   padding-bottom: 40px; 
   display: block; 
   height: auto; 
-  width: 40vw; 
-  max-width: 800px;
+  width: 70vw; 
+  max-width: 1900px;
   .watermelon {
     animation: ${watermelonFly} infinite 2.5s ease-out; 
   }

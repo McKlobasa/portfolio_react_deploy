@@ -38,8 +38,8 @@ const GlobalStyle = createGlobalStyle`
   }
   :root {
     --text: #444444;
-    --secondary: #002B55;
-    --highlight: #80C565;
+    --secondary: #004122;
+    --highlight: #ED3E3E;
   }
   html {
     width: 100vw;
@@ -48,6 +48,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background: var(--secondary);
+    background: repeating-linear-gradient(
+      65deg,
+      #004122,
+      #004122 50px,
+      #67B260 50px,
+      #67B260 100px
+    );
     position: relative;
     width: 100vw;
     height: fit-content;
@@ -55,8 +62,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 const comeInAnimation = keyframes`
- 0% {  width: 0px; }
- 100% { width: 100%; }
+ 0% {  transform: Scale(80%) }
+ 100% { transform: Scale(100%) }
 `
 const MiddleBackground = styled.div`
   height: 100%;
@@ -74,35 +81,77 @@ const Spacer = styled.div`
 `
 const wing1Anim = keyframes`
   0% {
-      d: path("M280.603 126L309 181.187L297.043 219L259.679 197.538H171L280.603 126Z");
+    transform-origin: 75%;
+    -webkit-transform: RotateY(0deg);
+       -moz-transform: RotateY(0deg);
+        -ms-transform: RotateY(0deg);
+         -o-transform: RotateY(0deg);
+    transform: RotateY(0deg);
   }
-  90% {
-      d: path("M280.603 109L309 181.187L297.043 219L289.679 177.538H221L280.603 109Z");
+  20% {
+    transform-origin: 75%;
+    transform: RotateY(70deg);
+    -webkit-transform: RotateY(70deg);
+       -moz-transform: RotateY(70deg);
+        -ms-transform: RotateY(70deg);
+         -o-transform: RotateY(70deg);
   }
-  100% {
-      d: path("M280.603 126L309 181.187L297.043 219L259.679 197.538H171L280.603 126Z");
+  70% {
+    transform-origin: 75%;
+    transform: RotateY(0deg);
+    -webkit-transform: RotateY(0deg);
+       -moz-transform: RotateY(0deg);
+        -ms-transform: RotateY(0deg);
+         -o-transform: RotateY(0deg);
   }
 `;
 const wing2Anim = keyframes`
   0% {
-      d: path("M407.159 130L437 238L399.201 206.114L366.873 200.457L343 174.229L407.159 130Z");
+    transform-origin: 68%;
+    transform: RotateY(0deg);
+    -webkit-transform: RotateY(0deg);
+       -moz-transform: RotateY(0deg);
+        -ms-transform: RotateY(0deg);
+         -o-transform: RotateY(0deg);
   }
-  90% {
-      d: path("M387.159 130L537 118L379.201 206.114L366.873 200.457L343 174.229L387.159 130Z");
+  20% {
+    transform-origin: 68%;
+    transform: RotateY(-70deg);
+    -webkit-transform: RotateY(-70deg);
+       -moz-transform: RotateY(-70deg);
+        -ms-transform: RotateY(-70deg);
+         -o-transform: RotateY(-70deg);
   }
-  100% {
-      d: path("M407.159 130L437 238L399.201 206.114L366.873 200.457L343 174.229L407.159 130Z");
+  70% {
+    transform-origin: 68%;
+    transform: RotateY(0deg);
+    -webkit-transform: RotateY(0deg);
+       -moz-transform: RotateY(0deg);
+        -ms-transform: RotateY(0deg);
+         -o-transform: RotateY(0deg);
   }
 `;
 const watermelonFly = keyframes`
   0% {
-    transform: rotate(-8deg);
+    transform: TranslateY(5%);
+    -webkit-transform: TranslateY(5%);
+       -moz-transform: TranslateY(5%);
+        -ms-transform: TranslateY(5%);
+         -o-transform: TranslateY(5%);
   }
-  90% {
-    transform: rotate(0deg);
+  20% {
+    transform: TranslateY(0%);
+    -webkit-transform: TranslateY(0%);
+       -moz-transform: TranslateY(0%);
+        -ms-transform: TranslateY(0%);
+         -o-transform: TranslateY(0%);
   }
   100% {
-    transform: rotate(-8deg);
+    transform: TranslateY(5%);
+    -webkit-transform: TranslateY(5%);
+       -moz-transform: TranslateY(5%);
+        -ms-transform: TranslateY(5%);
+         -o-transform: TranslateY(5%);
   }
 `;
 const AnimatedMasterTitle = styled(MasterTitle)`
@@ -112,9 +161,9 @@ const AnimatedMasterTitle = styled(MasterTitle)`
   padding-bottom: 40px; 
   display: block; 
   height: auto; 
-  width: 80vw; 
+  width: 40vw; 
   max-width: 800px;
-  .slikca {
+  .watermelon {
     animation: ${watermelonFly} infinite 2.5s ease-out; 
   }
   .wing1 {
@@ -128,20 +177,20 @@ const StyledMasterTitle = styled.div`
   margin-left: auto;
   margin-right: auto;
   animation-name: ${comeInAnimation};
+  animation-fill-mode: forwards;
   animation-duration: 2s;
   animation-iteration-count: 1;
-  height: 45vw;
-  max-height: 600px;
-  width: 100vw
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 `
 function App(props) {
   const [lang, setLang] = useState('SLO')
   return (
     <div>
       <GlobalStyle />
-      <Header />
-      <Spacer />
-      <ScrollSign />
       <StyledMasterTitle>
         <AnimatedMasterTitle />
       </StyledMasterTitle>
@@ -153,7 +202,6 @@ function App(props) {
           <Image0  style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '40px', display: 'block', height: 'auto', width: '90%', maxWidth: '800px'}}/> 
           }
         </StyledImage>
-        <LeetText />
         <Tldr />
         <ChapterTitle>
           {lang == 'SLO'

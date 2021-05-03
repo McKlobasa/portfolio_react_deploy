@@ -21,9 +21,9 @@ const Container = styled.div`
   line-height: 1.7;
 `
 const buttonAnimation = keyframes`
- 0% { width: 30vw; }
- 50% { width: 60vw; }
- 100% { width: 30vw; }
+ 0% { transform: Scale(1.2) }
+ 50% { transform: Scale(1.0) }
+ 100% { transform: Scale(1.2) }
 `
 const Green = styled.span `
   background: var(--highlight);
@@ -45,11 +45,12 @@ const TldrButton = styled.button`
 position: relative;
   margin: 0 auto;
   height: 50px;
+  width: 30vw;
   font-size: 4vmin;
   border: none;
   background: ${ props => props.active ? 'var(--highlight)' : 'var(--secondary)' };
   color: white;
-  animation-name: ${buttonAnimation};
+  //nimation-name: ${buttonAnimation};
   animation-timing-function: ease;
   animation-duration: 3s;
   animation-iteration-count: infinite;

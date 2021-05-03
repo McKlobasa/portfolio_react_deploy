@@ -3,8 +3,8 @@ import styled, { keyframes } from 'styled-components'
 import { ReactComponent as Tldr } from './images/tldr.svg'
 
 const comeInAnimation = keyframes`
- 0% { height: 0px; width: 0px; }
- 100% { height: 20vmin; width: 15vmin; }
+ 0% { transform: Scale(50%) }
+ 100% { transform: Scale(100%) }
 `
 const Flag = styled.img`
   height: 20vmin;
